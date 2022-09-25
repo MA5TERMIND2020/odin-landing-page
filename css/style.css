@@ -68,15 +68,18 @@ a {
 
 img {
     width: 600px;
-    height: 300px;
+    height: auto;
 }
 
 button {
     color:#e5e7eb;
     align-self: flex-start;
     background-color: #3882f6;
+    width: fit-content;
     padding: .5em .9em;
+    border-color: #1f2937;
     border-radius: .5em;
+    cursor: pointer;
 }
 
 /***Random Info and Cards***/
@@ -103,6 +106,7 @@ button {
     /*border: 1px solid;
     border-radius: 3px;
     box-shadow: black;*/
+    justify-content: space-between;
     padding: 5rem;
 }
 
@@ -110,13 +114,12 @@ button {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
     color: black;
-    border: 2px solid #1f2937;
-    border-radius: 2px;
+    border: 2px solid #3882f6;
+    border-radius: 5px;
     box-shadow: gray;
-    width: 25em;
+    width: 20em;
     height:auto;
 }
 
@@ -125,12 +128,55 @@ button {
     height: auto;
 }
 
+.card a {
+    text-decoration: #1f2937;
+}
+
 /***Quote***/
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e7eb;
+    padding: 10em;
+}
 
+.quote-text {
+    font-size: 36px;
+    font-style: light italic;
+    color: #1f2937;
+}
 
+.quote-author {
+    align-self:flex-end;
+}
+
+/***Call-to-Action-Section***/
+.call-to-action-container {
+    display: flex;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin: 10em;
+    padding: 3em 4em;
+}
+
+.call-to-action-button button {
+    border-color: #e5e7eb;
+}
 
 
 /***Footer***/
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2937;
+    color: #e5e7eb;
+}
 .footer-text {
     justify-content: center;
 }
